@@ -18,9 +18,11 @@ type Token = {
   expires_in: number;
 };
 
-app.get("/contacts", (c) => {
-
-}
+// app.get("/contacts", (c) => {
+// error if not signed in yet
+// fetch('https://api.hubapi.com/crm/v3/objects/contacts';)
+// return response
+// })
 
 // Hubspot hits this endpoint "/api/auth", sends along as part of the URL a query parameter called "code"
 app.get("/auth", async (c) => {
