@@ -18,6 +18,10 @@ type Token = {
   expires_in: number;
 };
 
+app.get("/contacts", (c) => {
+
+}
+
 // Hubspot hits this endpoint "/api/auth", sends along as part of the URL a query parameter called "code"
 app.get("/auth", async (c) => {
   const code = c.req.query("code")!;
